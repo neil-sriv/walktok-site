@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>walktok Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the walktok iOS app." />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fafaf7;
+        --fg: #1a1a1a;
+        --muted: #555;
+        --accent: #ff6a3d;
+        --rule: #e5e5e0;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        padding: 48px 20px 96px;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 36px;
+        margin: 0 0 8px;
+        letter-spacing: -0.02em;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 32px;
+      }
+      h2 {
+        margin-top: 36px;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+      }
+      h3 {
+        margin-top: 24px;
+        font-size: 16px;
+        color: var(--muted);
+      }
+      p, li { color: var(--fg); }
+      ul { padding-left: 22px; }
+      li { margin-bottom: 6px; }
+      hr {
+        border: 0;
+        border-top: 1px solid var(--rule);
+        margin: 40px 0;
+      }
+      a { color: var(--accent); }
+      code {
+        font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+        background: #efeee9;
+        padding: 1px 6px;
+        border-radius: 4px;
+      }
+      footer {
+        margin-top: 64px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>walktok Privacy Policy</h1>
+      <p class="updated">Last updated: May 25, 2026</p>
+
+      <p>
+        walktok is a hobby iOS app that lets small groups of friends ("crews")
+        race each other by daily step count, taunt each other in a shared feed,
+        and play silly power-ups against each other. This document explains
+        what data the app collects, what we do with it, and how to get it
+        removed.
+      </p>
+
+      <h2>Who runs walktok</h2>
+      <p>
+        walktok is an independent personal project. It is not affiliated with
+        any company. The developer can be reached at
+        <a href="mailto:neilsgr8@gmail.com">neilsgr8@gmail.com</a>.
+      </p>
+
+      <h2>What data walktok collects</h2>
+
+      <h3>Profile information you provide</h3>
+      <ul>
+        <li>A display name you choose during onboarding.</li>
+        <li>A cartoon avatar (color and face) you pick from preset options.</li>
+        <li>A short "vibe" label and in-game cosmetic choices.</li>
+      </ul>
+
+      <h3>Crew and gameplay data</h3>
+      <ul>
+        <li>Which crew you create or join, and the crew's invite code.</li>
+        <li>In-game inventory, equipped cosmetics, and unlocks.</li>
+        <li>Power-up plays you make against other crew members.</li>
+        <li>Short trash-talk activity feed entries tied to gameplay events.</li>
+      </ul>
+
+      <h3>Step data from your device</h3>
+      <ul>
+        <li>
+          With your permission (the iOS "Motion &amp; Fitness" prompt), walktok
+          reads your daily step count from the iOS pedometer and records it
+          against your profile so your crew can see today's leaderboard.
+        </li>
+        <li>
+          walktok records per-day step totals and step delta events (with a
+          source label like <code>pedometer</code>, <code>manual</code>,
+          <code>powerup</code>, or <code>reward</code>). It does not read GPS,
+          heart rate, sleep data, or any other HealthKit information.
+        </li>
+        <li>
+          You can revoke motion access at any time in
+          <em>iOS Settings &rarr; Privacy &amp; Security &rarr; Motion &amp;
+          Fitness</em>. The app will then fall back to its offline demo mode.
+        </li>
+      </ul>
+
+      <h3>What walktok does NOT collect</h3>
+      <ul>
+        <li>No precise or coarse location.</li>
+        <li>No contacts, photos, microphone, or camera access.</li>
+        <li>No advertising identifiers, no ad tracking, no analytics SDKs.</li>
+        <li>No payment information &mdash; the app has no paid features.</li>
+        <li>
+          No HealthKit data beyond the pedometer step counter described above.
+        </li>
+      </ul>
+
+      <h2>How your data is used</h2>
+      <ul>
+        <li>To show your crew's leaderboard and shared activity feed.</li>
+        <li>To run gameplay (power-ups, unlocks, cosmetics).</li>
+        <li>To persist your profile between sessions on the same device.</li>
+      </ul>
+      <p>
+        Your data is not used for advertising, profiling, or sold to anyone.
+      </p>
+
+      <h2>Where your data is stored</h2>
+      <p>
+        Profile, crew, step, and feed data is stored in a Supabase project
+        (PostgreSQL hosted by Supabase, Inc.) operated by the developer.
+        Supabase processes this data on the developer's behalf and is bound
+        by Supabase's own privacy and security commitments. See
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.
+      </p>
+      <p>
+        A copy of your profile and recent gameplay state is also cached
+        locally on your iPhone using the iOS app's storage so the app can
+        start quickly and work briefly offline.
+      </p>
+
+      <h2>Who can see your data</h2>
+      <ul>
+        <li>
+          <strong>Your crew:</strong> other members of any crew you join can
+          see your display name, avatar, daily step totals, and feed activity
+          inside that crew.
+        </li>
+        <li>
+          <strong>The developer:</strong> as the operator of the Supabase
+          backend, the developer has technical access to stored data for
+          debugging, abuse handling, and improving the app.
+        </li>
+        <li>
+          <strong>Supabase, Inc.:</strong> as the database host.
+        </li>
+        <li>
+          <strong>Apple:</strong> while walktok is distributed via TestFlight,
+          Apple receives crash logs and basic install metadata under
+          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's privacy policy</a>.
+        </li>
+      </ul>
+      <p>
+        walktok does not sell or rent your data and does not share it with
+        any other third parties.
+      </p>
+
+      <h2>Data retention</h2>
+      <p>
+        Profile, crew, and step data is retained until you ask for it to be
+        deleted or the walktok backend is shut down. Because walktok is a
+        hobby project, the backend may be discontinued at any time, in
+        which case stored data will be deleted.
+      </p>
+
+      <h2>Deleting your data</h2>
+      <p>
+        To delete your walktok profile and associated gameplay data, email
+        <a href="mailto:neilsgr8@gmail.com">neilsgr8@gmail.com</a> from the
+        address tied to your account (or include your display name and crew
+        invite code so we can identify the right record). Your data will be
+        removed within 30 days.
+      </p>
+      <p>
+        You can also uninstall the app at any time, which clears the locally
+        cached copy on your device.
+      </p>
+
+      <h2>Children's privacy</h2>
+      <p>
+        walktok is not directed to children under 13 and does not knowingly
+        collect personal information from children under 13. If you believe
+        a child has provided data through the app, contact
+        <a href="mailto:neilsgr8@gmail.com">neilsgr8@gmail.com</a> and the
+        record will be removed.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        walktok uses HTTPS for all communication with the Supabase backend.
+        Row-level security policies restrict access to crew data to the
+        members of that crew. No system is perfectly secure; please do not
+        store sensitive information in your display name or feed posts.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes in a meaningful way, the "Last updated" date
+        above will change and, where practical, a notice will appear in the
+        app on next launch.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy or requests about your data:
+        <a href="mailto:neilsgr8@gmail.com">neilsgr8@gmail.com</a>.
+      </p>
+
+      <hr />
+      <footer>
+        walktok &middot; a personal hobby project &middot; not a commercial product.
+      </footer>
+    </main>
+  </body>
+</html>
